@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    background-color: #111;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 50;
+    margin: 1rem 0 3rem;
+    text-align: center;
+    color: #FFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.input_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input_div .input {
+    padding: 0.5rem 1 3rem;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    width: 450px;
+    font-size: 1.15rem;
+
+}
+
+.addButton {
+height: 50px;
+width: 50px;
+outline: none;
+border: none;
+background-color: lime;
+color: #fff;
+margin: 0.25rem;
+}
+
+.addButton:hover{
+    opacity: 0.7;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.item {
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid #fff;
+
+}
+
+.item_input{
+    background: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    width: 350px;
+    font-size: 1.4rem;
+}
+
+.editButton, .removeButton, .completeButton{
+    font-size: 1.4rem;
+    margin: 0 0.75rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: none;
+    outline: none;
+    color: lime;
+    border: none;
+    cursor: pointer;
+}
+.removeButton {
+    color: red;
+}
+.editButton {
+    color: yellow;
+}
