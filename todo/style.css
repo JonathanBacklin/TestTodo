@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -16,7 +17,7 @@ h1 {
     margin: 1rem 0 3rem;
     text-align: center;
     color: #FFF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -38,27 +39,32 @@ h1 {
 
 }
 
-.addButton {
+
+.addButton,.resetButton {
 height: 50px;
 width: 50px;
 outline: none;
 border: none;
 background-color: lime;
 color: #fff;
-margin: 0.25rem;
+margin: 0.1rem;
 }
 
-.addButton:hover{
+.addButton:hover,.resetButton:hover{
     opacity: 0.7;
 }
 
-.container{
+
+.container,.second-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 2rem;
+}
+.second-container {
+    background: green;
 }
 
 .item {
@@ -80,7 +86,7 @@ margin: 0.25rem;
 .editButton, .removeButton, .completeButton{
     font-size: 1.4rem;
     margin: 0 0.75rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: none;
     outline: none;
     color: lime;
@@ -92,4 +98,7 @@ margin: 0.25rem;
 }
 .editButton {
     color: yellow;
+}
+.item_clicked {
+    color: red;
 }

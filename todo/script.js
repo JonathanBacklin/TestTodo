@@ -1,6 +1,7 @@
 const addButton = document.querySelector('addButton');
 let inputValue = document.querySelector('.input');
 const container = document.querySelector('.container');
+const secondContainer = document.querySelector('.second-container');
 let error = document.querySelector('.error-message')
 
 class item{
@@ -38,17 +39,24 @@ class item{
         itemBox.appendChild(removeButton);
 
         editButton.addEventListener('click', () => this.edit(input))
+        completedButton.addEventListener('click', () => this.move(itemBox))
         removeButton.addEventListener('click', () => this.remove(itemBox))
+        console.log(itemBox.parentNode)
     }
     edit(input){
         input.disabled = !input.disabled
+        input.classList.toggle('item_clicked')
+        
     }
-
+    move(itemBox){
+        secondContainer.append(itemBox)
+        
+    }
     remove(item){
         container.removeChild(item)
     }
-
 }
+
 
 let addFunction = (inputValue) => {
     
@@ -61,7 +69,12 @@ let addFunction = (inputValue) => {
         new item(inputValue)
     }
 
-    inputValue.value = "";
+    inputValue = "";
+}
+
+let resetFunction = () => {
+    container.innerHTML = ""
+    secondContainer.innerHTML = ""
 }
 // function check(){
 //     if(inputValue.value != ""){
