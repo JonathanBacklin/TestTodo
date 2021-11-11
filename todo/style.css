@@ -10,7 +10,10 @@ body {
     height: 100%;
     background-color: #111;
 }
-
+#myError {
+    text-align: center;
+    color: white;
+}
 h1 {
     font-size: 3rem;
     font-weight: 50;
@@ -29,7 +32,7 @@ h1 {
 }
 
 .input_div .input {
-    padding: 0.5rem 1 3rem;
+    padding-left: 10px;
     height: 50px;
     outline: none;
     border: none;
@@ -51,7 +54,8 @@ margin: 0.1rem;
 }
 
 .addButton:hover,.resetButton:hover{
-    opacity: 0.7;
+    opacity: 0.5;
+    color: pink;
 }
 
 
@@ -89,16 +93,20 @@ margin: 0.1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: none;
     outline: none;
-    color: lime;
+    color: darkgreen;
     border: none;
     cursor: pointer;
 }
 .removeButton {
     color: red;
+    
 }
 .editButton {
     color: yellow;
 }
 .item_clicked {
-    color: red;
+    color: yellow;
+    background-color: #222;
 }
+
+/*GÖR RESPONSIV OM HAR TID*/
