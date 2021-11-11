@@ -38,7 +38,6 @@ class item{
         editButton.addEventListener('click', () => this.edit(input))
         completedButton.addEventListener('click', () => this.move(itemBox))
         removeButton.addEventListener('click', () => this.remove(itemBox))
-        removeButton.addEventListener('click', () => this.test(itemBox))
     }
     edit(input){
         if(input.value == ""){
@@ -50,23 +49,18 @@ class item{
             input.disabled = !input.disabled
             error.hidden = true
         }
-        
     }
     move(itemBox){
         secondContainer.append(itemBox)
-        let test = itemBox.childNodes[2]
-        itemBox.removeChild(test)
+        let itemTemporary = itemBox.childNodes[2]
+        itemBox.removeChild(itemTemporary)
 
     }
     remove(item){
-        container.removeChild(item)
-    }
-    test(item){
-        secondContainer.removeChild(item)
+        item.remove()
     }
 }
 
-    
 let addFunction = (inputValue) => {
     inputValue = document.querySelector('.input').value;
     if (inputValue == ""){

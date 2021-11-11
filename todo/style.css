@@ -69,6 +69,8 @@ margin: 0.1rem;
 }
 .second-container {
     background: green;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .item {
@@ -78,7 +80,7 @@ margin: 0.1rem;
 
 }
 
-.item_input{
+.item_input{    
     background: none;
     outline: none;
     color: #fff;
